@@ -77,7 +77,7 @@ public class PetApp {
      */
     public void setAndShowScene(VBox currentLayout) {
         Scene currentScene = new Scene(currentLayout, width, height);
-        currentScene.getStylesheets().add(getClass().getResource("/styles.css").toExternalForm());
+        currentScene.getStylesheets().add(getClass().getResource("/com/codedotorg/styles.css").toExternalForm());
         
         window.setScene(currentScene);
         window.show();

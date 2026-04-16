@@ -123,10 +123,10 @@ public class Pet {
      */
     public void updateImage() {
         if (happiness < 50 || hunger > 50) {
-            petImage = new Image(getClass().getResourceAsStream("/" + sadImage));
+            petImage = new Image(getClass().getResourceAsStream("/com/codedotorg/" + sadImage));
         }
         else {
-            petImage = new Image(getClass().getResourceAsStream("/" + happyImage));
+            petImage = new Image(getClass().getResourceAsStream("/com/codedotorg/" + happyImage));
         }
 
         petImageView.setImage(petImage);
@@ -138,7 +138,7 @@ public class Pet {
      * preserve ratio to true.
      */
     public void setPetImage() {
-        petImage = new Image(getClass().getResourceAsStream("/" + happyImage));
+        petImage = new Image(getClass().getResourceAsStream("/com/codedotorg/" + happyImage));
         petImageView = new ImageView(petImage);
         petImageView.setFitWidth(300);
         petImageView.setPreserveRatio(true);
